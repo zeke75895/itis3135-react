@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background: #fffaf6;
+  color: #2e2b23;
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.55;
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: #fff2e6;
+  padding: 20px 18px;
+  border-bottom: 3px solid rgba(192, 88, 26, 0.08);
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  color: #c0581a;
+}
+
+nav {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: rgba(192, 88, 26, 0.06);
+  border-radius: 6px;
+  text-decoration: none;
+  color: #c0581a;
+}
+
+main {
+  max-width: 860px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+h2 {
+  color: #c0581a;
+  margin-top: 0;
+}
+
+footer {
+  padding: 14px 18px;
+  background: #fff2e6;
+  color: #6b5b4a;
+  font-size: 0.9rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: rgba(192, 88, 26, 0.05);
+  padding: 18px;
+  border: 1px solid rgba(192, 88, 26, 0.15);
+  border-radius: 10px;
+}
+
+.animal-icon {
+  font-size: 36px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+form label,
+form input,
+form select,
+form textarea,
+form fieldset,
+form button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+form fieldset {
+  border: 1px solid rgba(192, 88, 26, 0.15);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+form button {
+  width: auto;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #c0581a;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  #root {
+    width: 100%;
+    border-inline: none;
+  }
+}

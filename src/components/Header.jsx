@@ -21,6 +21,7 @@ export default function Header() {
         <NavLink to="/inventory" style={navLinkStyle}>Inventory</NavLink>
         <NavLink to="/documentation" style={navLinkStyle}>Documentation</NavLink>
         <NavLink to="/product" style={navLinkStyle}>Product</NavLink>
+        <NavLink to="/slideshow" style={navLinkStyle}>Slideshow</NavLink>
       </nav>
       <nav aria-label="Secondary Navigation">
         <NavLink to="/website_evaluations" style={navLinkStyle}>Site Evaluations</NavLink>

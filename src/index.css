@@ -128,3 +128,65 @@ form button {
     border-inline: none;
   }
 }
+
+.slideshow-page {
+  display: grid;
+  gap: 20px;
+}
+
+.slideshow-card {
+  background: #fff7f1;
+  border: 1px solid rgba(192, 88, 26, 0.15);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+.slideshow-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.slideshow-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.slideshow-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slideshow-controls button {
+  flex: 1 1 120px;
+  min-width: 110px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #c0581a;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.slideshow-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slideshow-controls button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.error-message {
+  color: #9a1717;
+  font-weight: 600;
+}

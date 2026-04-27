@@ -13,6 +13,7 @@ import Documentation from './pages/Documentation.jsx'
 import Product from './pages/Product.jsx'
 import WebsiteEvaluations from './pages/WebsiteEvaluations.jsx'
 import Hobby from './pages/Hobby.jsx'
+import Slideshow from './pages/Slideshow.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -28,6 +29,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="inventory" element={<Inventory />} />
           <Route path="documentation" element={<Documentation />} />
           <Route path="product" element={<Product />} />
+          <Route path="slideshow" element={<Slideshow />} />
           <Route path="website_evaluations" element={<WebsiteEvaluations />} />
           <Route path="hobby" element={<Hobby />} />
           <Route path="*" element={<NotFound />} />
